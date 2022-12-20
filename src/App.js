@@ -8,14 +8,14 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router> */}
         <Navbar />
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />
-        </Routes>
-      </Router>
+        </Routes> */}
+      {/* </Router> */}
     </div>
   );
 }
