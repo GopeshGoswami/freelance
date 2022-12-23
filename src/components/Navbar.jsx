@@ -19,14 +19,14 @@ export default function Navbar() {
 
   return (
     <nav
-      className={` h-[7vh] items-center flex justify-around sticky w-full top-0 left-10 z-20  text-white backdrop-blur-lg bg-[#000000e7]`}
+      className={` h-[7vh] items-center flex justify-around sticky w-full top-0 left-10 z-20 text-white backdrop-filter backdrop-blur-lg `}
     >
       <div className=" mx-3 md:mx-20 flex md:w-2/4 justify-between flex-row items-center">
-        <ul className=" mx-1 hidden md:flex gap-3 md:gap-10  items-center">
-          <Link to="/men">Men</Link>
-          <Link to="/women">Women</Link>
+        <ul className=" mx-1 hidden md:flex gap-3 md:gap-10  items-center ">
+          <Link className="hover:text-green-300 duration-500" to="/men">Men</Link>
+          <Link className="hover:text-green-300 duration-500" to="/women">Women</Link>
         </ul>
-        <Link to="/" className=" text-lg md:text-3xl font-black mr-10">
+        <Link to="/" className=" text-lg md:text-3xl font-black mr-10 hover:text-green-300 duration-500">
           Guava
         </Link>
       </div>
@@ -37,22 +37,22 @@ export default function Navbar() {
           <input
             type="text"
             placeholder="Search..."
-            className=" bg-[#3D3737] md:mx-4 w-56 px-3 py-1 rounded-md"
+            className=" bg-[#3D3737] md:mx-4 w-56 px-3 py-1 rounded-md focus:outline-none "
           />
         </div>
         <div className=" flex items-center  justify-center">
-          <ul className=" flex items-center  gap-7 mx-2 md:mx-5">
-            <div className=" flex items-center justify-center flex-col">
+          <ul className=" flex items-center  gap-7 mx-2 lg:mx-5">
+            <Link to="/profile"><div className=" flex items-center justify-center flex-col">
               <li>
-                <CgProfile className=" text-xl md:text-2xl" />
+              <a href="Profile.jsx"><CgProfile className=" text-xl lg:text-2xl" /></a>
               </li>
-              <li className=" hidden md:block">Bag</li>
-            </div>
+              <li className=" hidden lg:block hover:text-green-300 duration-500">Profile</li>
+            </div></Link>
             <div className=" flex items-center flex-col">
               <li>
-                <BsBagFill className=" text-xl md:text-2xl" />
+              <a href="Bag.jsx"><BsBagFill className=" text-xl lg:text-2xl" /></a>
               </li>
-              <li className=" hidden md:block">Profile</li>
+              <li className=" hidden lg:block hover:text-green-300 duration-500"><a href="Bag.jsx">Bag</a></li>
             </div>
           </ul>
         </div>

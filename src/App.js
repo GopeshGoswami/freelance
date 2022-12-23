@@ -2,20 +2,22 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Men from "./pages/Men.jsx";
+import Profile from "./pages/Profile.jsx";
 import Women from "./pages/Women.jsx";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      {/* <Router> */}
+      <Router>
         <Navbar />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />
-        </Routes> */}
-      {/* </Router> */}
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
