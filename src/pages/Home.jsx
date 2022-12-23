@@ -16,7 +16,7 @@ export default function Home() {
             />
             <div className=" hidden bg-[#00000047] absolute top-0 left-0 w-full h-full hover:cursor-pointer  backdrop-blur-sm md:flex flex-col items-center justify-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300 ">
               <p className=" font-bold my-12 object-fill text-white text-3xl md:text-5xl  ">
-                Men
+                Men!
               </p>
             </div>
             <div className=" md:hidden flex absolute top-0 left-0 w-full h-full justify-center items-end ">
